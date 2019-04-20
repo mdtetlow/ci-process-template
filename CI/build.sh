@@ -45,6 +45,5 @@ echo "Running checkstyle tool"
 [ ! -d "${ROOT_DIR}/tools/pkg" ] && { mkdir "${ROOT_DIR}/tools/pkg"; }
 
 # run tool
-echo "${ROOT_DIR}/tools/checkstyle.sh \"${ROOT_DIR}/tools/pkg\" \"${MVN_PATH}/src/main/java\" > ${ROOT_DIR}/log/checkstyle.log 2>&1"
 ${ROOT_DIR}/tools/checkstyle.sh "${ROOT_DIR}/tools/pkg" "${MVN_PATH}/src/main/java" > ${ROOT_DIR}/log/checkstyle.log 2>&1
 [ $? -ne 0 ] && { echo "[ FAILED ]"; echo "checkstyle failed or produced style errors - refer to log file: ${ROOT_DIR}/log/checkstyle.log"; }
