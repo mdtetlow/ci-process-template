@@ -51,7 +51,7 @@ Outside of the docker container, use "docker cp" to copy the deployed applicatio
 
   - This markdown file is too sparse and needs properly formatting
   - The Docker solution is only partially complete/working.
-  - Dockerfile COPY directory is not working properly resulting in files owned by root.
   - Docker entry script needed to drive phases without docker run command needing to be interactive.
   - Deployed java application util jar untested.
   - No instructions on how to test deployed application.
+  - FIXED: Dockerfile COPY directory is not working properly resulting in files owned by root.
