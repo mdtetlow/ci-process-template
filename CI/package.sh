@@ -19,6 +19,9 @@ JAR_SUFFIX="1.0-SNAPSHOT"
 [ ! -f "${MVN_PATH}/pom.xml" ] && { echo "Error - path provided is not a valid Maven project"; usage; }
 cd ${MVN_PATH}
 
+# create log directory
+[ ! -d ${ROOT_DIR}/log ] && { mkdir ${ROOT_DIR}/log; }
+
 # Maven prackage will produce the Java project jar
 echo ""
 echo "Running Maven package"

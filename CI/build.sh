@@ -18,6 +18,9 @@ ROOT_DIR=$(dirname `pwd`/$0)
 [ ! -f "${MVN_PATH}/pom.xml" ] && { echo "Error - path provided is not a valid Maven project"; usage; }
 cd ${MVN_PATH}
 
+# create log directory
+[ ! -d ${ROOT_DIR}/log ] && { mkdir ${ROOT_DIR}/log; }
+
 # compilation
 echo ""
 echo "Compiling source"

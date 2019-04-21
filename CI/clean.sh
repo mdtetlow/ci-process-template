@@ -18,7 +18,7 @@ mvn clean
 
 cd ${ROOT_DIR}
 
-ARTEFACTS="tools/pkg ./*.tar.gz log/*.log ${MVN_PATH}/checkstyle"
+ARTEFACTS="tools/pkg ./*.tar.gz log ${MVN_PATH}/checkstyle"
 echo "Removing CI artefacts: $ARTEFACTS"
 for a in ${ARTEFACTS}
 do
